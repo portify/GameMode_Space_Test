@@ -1,0 +1,36 @@
+#Command
+Captain
+Head of Personnel
+
+#Security
+Head of Security
+Warden
+Security Officer
+Detective
+
+#Medical
+Chief Medical Officer
+Medical Doctor
+Chemist
+#Geneticist
+#Virologist
+
+#Science
+Research Director
+Scientist
+Roboticist
+
+#Engineering
+Chief Engineer
+Station Engineer
+Atmospheric Technician
+
+#Logistics
+#Quartermaster
+#Cargo Technician
+#Shaft Miner
+
+#Civilian
+Chef
+Botanist
+#Clown

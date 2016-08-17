@@ -1,0 +1,17 @@
+AutocannonItem
+AutogunItem
+AutopistolItem
+BoltgunItem
+BoltpistolItem
+ChainswordItem
+WHFlamerItem
+IGGrenadelauncherItem
+HeavybolterItem
+HeavyFlamerItem
+MeltagunItem
+WHMissilelauncherItem
+WHMortarItem
+PlasmagunItem
+PlasmapistolItem
+PowerfistItem
+PowerswordItem

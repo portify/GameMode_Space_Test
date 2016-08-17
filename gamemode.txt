@@ -1,0 +1,164 @@
+// Add-Ons
+ADDON Brick_1RandomPack
+ADDON Brick_Arch
+ADDON Brick_Brick_Cubes
+ADDON Brick_DecorativeBlocks
+ADDON Brick_Doors
+ADDON Brick_ExtraGrills
+ADDON Brick_ExtraPrints
+ADDON Brick_ExtraRamps
+ADDON Brick_Fence
+ADDON Brick_HorizPoles
+ADDON Brick_Interactive
+ADDON Brick_InvertedCorners
+ADDON Brick_Jirue
+ADDON Brick_Large_Cubes
+ADDON Brick_LegoCrates
+ADDON Brick_PoleAdapters
+ADDON Brick_RazorWire
+ADDON Brick_SmallRampsPack
+ADDON Brick_v15
+ADDON Brick_VerticalPlatePack
+ADDON Brick_Window
+ADDON Brick_WireFence
+
+ADDON JVS_Content
+ADDON JVS_SwitchesPack1
+ADDON Content_Phydeoux
+
+ADDON Emote_Alarm
+ADDON Emote_Confusion
+ADDON Emote_Critical
+ADDON Emote_Hate
+ADDON Emote_Love
+
+ADDON Event_addItem
+ADDON Event_Camera_Control
+ADDON Event_onBrickLoaded
+ADDON Event_RemoveItem
+ADDON Event_WaterBrickEvents
+
+ADDON Projectile_GravityRocket
+ADDON Projectile_Pinball
+ADDON Projectile_Pong
+ADDON Projectile_Radio_Wave
+
+ADDON Light_Ambient
+ADDON Light_Animated
+ADDON Light_Basic
+ADDON Light_Toxic
+ADDON Particle_Basic
+ADDON Particle_FX_Cans
+ADDON Particle_Player
+ADDON Particle_Tools
+
+ADDON Print_Letters_Default
+ADDON Print_1x2f_Default
+ADDON Print_2x2f_Default
+ADDON Print_2x2f_RestroomSigns
+ADDON Print_2x2f_VendingMachine
+ADDON Print_2x2r_Default
+ADDON Print_2x2r_Monitor3
+
+ADDON Sound_Beeps
+ADDON Sound_Blockland
+ADDON Sound_Phone
+ADDON Sound_Synth4
+
+ADDON Vehicle_Forklift
+ADDON Vehicle_Jeep
+ADDON Vehicle_Pirate_Cannon
+ADDON Vehicle_Tank
+ADDON Vehicle_Rowboat
+ADDON Vehicle_Horse
+
+ADDON Weapon_Bow
+ADDON Weapon_Chainsaw
+ADDON Weapon_Gun
+ADDON Weapon_Guns_Akimbo
+ADDON Weapon_Push_Broom
+ADDON Weapon_Rocket_Launcher
+ADDON Weapon_Horse_Ray
+ADDON Weapon_Spear
+ADDON Weapon_Sword
+
+ADDON Support_Doors
+ADDON Support_Player_Persistence
+
+ADDON GameMode_DM_Mesa
+ADDON Gamemode_Space_Test
+
+// Environment
+$EnvGuiServer::SimpleMode 0
+$EnvGuiServer::SkyFile Add-Ons/Sky_TeneksiV1/partly cloudy/defu.dml
+$EnvGuiServer::WaterFile NONE
+$EnvGuiServer::GroundFile Add-Ons/Ground_Plate/plate.ground
+$EnvGuiServer::SunFlareTopTexture base/lighting/flare2.png
+$EnvGuiServer::SunFlareBottomTexture base/lighting/lightFalloffMono.png
+$EnvGuiServer::DayOffset 0
+$EnvGuiServer::DayLength 300
+$EnvGuiServer::DayCycleEnabled 0
+$EnvGuiServer::DayCycle Add-Ons/DayCycle_Default/default.daycycle
+$EnvGuiServer::SunAzimuth 229.224
+$EnvGuiServer::SunElevation 48.7755
+$EnvGuiServer::DirectLightColor 0.621495 0.600000 0.588785 1.000000
+$EnvGuiServer::AmbientLightColor 0.500000 0.500000 0.500000 1.000000
+$EnvGuiServer::ShadowColor 0.300000 0.300000 0.400000 1.000000
+$EnvGuiServer::SunFlareColor 0.495327 0.448598 0.373832 1.000000
+$EnvGuiServer::SunFlareSize 1
+$EnvGuiServer::VisibleDistance 600
+$EnvGuiServer::FogDistance 44.898
+$EnvGuiServer::FogHeight 0
+$EnvGuiServer::FogColor 1.000000 0.883178 0.803738 1.000000
+$EnvGuiServer::WaterColor 1.000000 1.000000 1.000000 0.501961
+$EnvGuiServer::WaterHeight 5
+$EnvGuiServer::UnderWaterColor 0.000000 0.000000 0.501961 0.501961
+$EnvGuiServer::SkyColor 1.000000 0.962617 0.920561 1.000000
+$EnvGuiServer::WaterScrollX 0
+$EnvGuiServer::WaterScrollY 0
+$EnvGuiServer::GroundColor 0.626168 0.471963 0.313084 1.000000
+$EnvGuiServer::GroundScrollX 0
+$EnvGuiServer::GroundScrollY 0
+$EnvGuiServer::VignetteMultiply 0
+$EnvGuiServer::VignetteColor 0.000000 0.000000 0.000000 0.000000
+
+// Mini-Game
+$MiniGame::Enabled 1
+$MiniGame::GameColor 0
+$MiniGame::InviteOnly 0
+$MiniGame::IncludeAllPlayersBricks 1
+$MiniGame::PlayersUseOwnBricks 0
+
+$MiniGame::Points_BreakBrick 0
+$MiniGame::Points_PlantBrick 0
+$MiniGame::Points_KillPlayer 0
+$MiniGame::Points_KillSelf 0
+$MiniGame::Points_Die 0
+   
+$MiniGame::RespawnTime 1
+$MiniGame::VehicleRespawnTime 5
+$MiniGame::BrickRespawnTime 360
+
+$MiniGame::UseSpawnBricks 1
+$MiniGame::FallingDamage 1
+$MiniGame::WeaponDamage 1
+$MiniGame::SelfDamage 1
+$MiniGame::VehicleDamage 1
+$MiniGame::BrickDamage 0
+$MiniGame::EnableWand 0
+$MiniGame::EnableBuilding 0
+$MiniGame::EnablePainting 0
+
+// Server Settings
+$Server::Quota::Player 24
+$Server::Quota::Schedules 999
+$Server::QuotaLAN::Schedules 999
+$Server::MaxBricksPerSecond 1000
+$Server::MaxPhysVehicles_Total 20
+$Server::MaxPlayerVehicles_Total 200
+$Server::Quota::Environment 5000
+$Server::Quota::Item 100
+$Server::Quota::Misc 9999
+$Server::Quota::Projectile 200
+$Server::Quota::Schedules 1000
+$Server::Quota::Vehicle 100

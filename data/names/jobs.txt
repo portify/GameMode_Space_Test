@@ -1,0 +1,36 @@
+Captain
+Head of Personnel
+Head of Security
+Warden
+Security Officer
+Detective
+Chief Engineer
+Station Engineer
+Atmospheric Technician
+Research Director
+Scientist
+Roboticist
+Chief Medical Officer
+Medical Officer
+Chemist
+Geneticist
+Virologist
+Quartermaster
+Cargo Technician
+Shaft Miner
+Janitor
+Bartender
+Chef
+Botanist
+Assistant
+Clown
+Mime
+Chaplain
+Librarian
+Lawyer
+
+Nuclear Agent
+Wizard
+Xenomorph
+Space Ninja
+Death Squad Officer

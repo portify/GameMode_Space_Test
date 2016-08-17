@@ -1,0 +1,167 @@
+{
+    // Command
+    "Captain": {
+        "division": "command",
+        "head": 1,
+        "clothing": [
+            {"type": "Node", "desc": "a Captain's hat", "node": "copHat", "color": "0 0.5 0.25 1"},
+            {"type": "Suit", "desc": "a Captain's green suit", "decal": "Mod-Pilot", "color": "0 0.5 0.25 1", "padNode": "epauletsRankA", "padColor": "0.9 0.9 0 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["all"]
+    },
+    "Head of Personnel": {
+        "division": "command",
+        "head": 1,
+        "clothing": [
+            {"type": "Node", "desc": "a blue cap", "node": "copHat", "color": "0 0.141 0.333 1"},
+            {"type": "Suit", "desc": "a blue airforce suit", "decal": "Mod-Pilot", "color": "0 0.141 0.333 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["command", "research", "brig", "medical", "engineering"]
+    },
+    "Head of Security": {
+        "division": "security",
+        "head": 1,
+        "clothing": [
+            {"type": "Hat", "desc": "sunglasses", "hatName": "Sunglasses"},
+            {"type": "Node", "desc": "a red cap", "node": "copHat", "color": "0.388 0 0.117 1"},
+            {"type": "Suit", "desc": "a red police jumpsuit", "decal": "Mod-Police", "color": "0.388 0 0.117 1", "padNode": "epauletsRankB", "padColor": "0.9 0.9 0 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["command", "office_hos", "security", "research", "engineering"]
+    },
+    "Chief Engineer": {
+        "division": "engineering",
+        "head": 1,
+        "clothing": [
+            {"type": "Hat", "desc": "a hardhat", "hatName": "Hardhat"},
+            {"type": "Suit", "desc": "an orange jumpsuit with orange shoulderpads", "decal": "worm_engineer", "color": "0.901 0.341 0.078 1", "padNode": "ShoulderPads", "padColor": "0.901 0.341 0.078 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["command", "engineering", "server", "brig"]
+    },
+    "Research Director": {
+        "division": "science",
+        "head": 1,
+        "clothing": [
+            {"type": "Suit", "desc": "a tan labcoat", "decal": "DrKleiner", "color": "0.901 0.341 0.078 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["command", "science", "research", "genetics", "brig"]
+    },
+    "Chief Medical Officer": {
+        "division": "medical",
+        "head": 1,
+        "clothing": [
+            {"type": "Suit", "desc": "a white labcoat with shoulderpads", "decal": "DrKleiner", "color": "0.9 0.9 0.9 1", "padNode": "ShoulderPads", "padColor": "0.105 0.458 0.768 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["command", "medical"]
+    },
+
+    // Security
+    "Warden": {
+        "division": "security",
+        "clothing": [
+            {"type": "Suit", "desc": "a red police jumpsuit with epaulets", "decal": "Mod-Police", "color": "0.588 0 0 1", "padNode": "epauletsRankD", "padColor": "0.9 0.9 0 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["security", "brig"]
+    },
+    "Security Officer": {
+        "division": "security",
+        "clothing": [
+            {"type": "Hat", "desc": "a cop hat", "hatName": "Cop"},
+            {"type": "Suit", "desc": "a blue police suit", "decal": "Mod-Police", "color": "0 0.336 0.5 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["security"]
+    },
+    "Detective": {
+        "division": "security",
+        "clothing": [
+            {"type": "Hat", "desc": "a Deerstalker hat", "hatName": "Detective"},
+            {"type": "Suit", "desc": "a tan suit", "decal": "Mod-Suit", "color": "0.794 0.607 0.471 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"},
+            {"type": "Glove", "desc": "black gloves", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": []
+    },
+
+    // Engineering
+    "Station Engineer": {
+        "division": "engineering",
+        "clothing": [
+            {"type": "Hat", "desc": "a hardhat", "hatName": "Hardhat"},
+            {"type": "Suit", "desc": "an orange jumpsuit", "decal": "worm_engineer", "color": "0.901 0.341 0.078 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["engineering"]
+    },
+    "Atmospheric Technician": {
+        "division": "engineering",
+        "clothing": [
+            {"type": "Hat", "desc": "a headset", "hatName": "Headset"},
+            {"type": "Suit", "desc": "an orange jumpsuit", "decal": "worm_engineer", "color": "0.901 0.341 0.078 1", "sleeveColor": "0.9 0.9 0 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["engineering", "atmospherics"]
+    },
+
+    // Science
+    "Scientist": {
+        "division": "science",
+        "clothing": [
+            {"type": "Suit", "desc": "a purple labcoat", "decal": "DrKleiner", "color": "0.892 0.845 0.976 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["science", "research"]
+    },
+    "Roboticist": {
+        "division": "science",
+        "clothing": [
+            {"type": "Suit", "desc": "a grey labcoat", "decal": "DrKleiner", "color": "0.5 0.5 0.5 1", "sleeveColor": "0.2 0.2 0.2 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["science", "research"]
+    },
+
+    // Medical
+    "Medical Doctor": {
+        "division": "medical",
+        "clothing": [
+            {"type": "Hat", "desc": "a stethoscope", "hatName": "Doctor"},
+            {"type": "Suit", "desc": "a white labcoat", "decal": "DrKleiner", "color": "0.9 0.9 0.9 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["medical", "morgue", "surgery"]
+    },
+    "Chemist": {
+        "division": "medical",
+        "clothing": [
+            {"type": "Suit", "desc": "a white labcoat with tan sleeves", "decal": "DrKleiner", "color": "0.9 0.9 0.9 1", "sleeveColor": "0.901 0.341 0.078 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["medical", "morgue", "surgery"]
+    },
+
+    // Civilian
+    "Chef": {
+        "division": "civilian",
+        "clothing": [
+            {"type": "Suit", "desc": "a chef's suit", "color": "0.9 0.9 0.9 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": ["bar", "kitchen"]
+    },
+    "Botanist": {
+        "division": "civilian",
+        "clothing": [
+            {"type": "Hat", "desc": "a Ragtime hat", "hatName": "Ragtime"}
+            {"type": "Suit", "desc": "a green jumpsuit", "decal": "worm_engineer", "color": "0 0.5 0.25 1"},
+            {"type": "Shoe", "desc": "generic grey boots", "color": "0.2 0.2 0.2 1"}
+        ],
+        "access": []
+    }
+}
