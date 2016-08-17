@@ -3,7 +3,7 @@ $IntroCamera = "17.4194 68.0933 92.5835 -0.830928 -0.308865 -0.462775 1.3534";
 
 datablock AudioProfile(TimerCountdownSound)
 {
-	fileName = "Add-Ons/GameMode_Space_Test/sounds/ui_timercountdown.wav";
+	fileName = "Add-Ons/GameMode_Space_Test/sounds/ui/ui_timercountdown.wav";
 	description = AudioDefault3D;
 };
 
@@ -63,14 +63,14 @@ function GameConnection::spaceIntro(%this)
 	else if (%this.spaceReady)
 	{
 		%text = "<just:center>\c6Use \c3/ready \c6to cancel joining the round. " @ %readyText @ "\n" @ %leftText;
-		serverPlay3D(TimerCountdownSound);
+		serverPlay2D(TimerCountdownSound);
 	}
 	else
 	{
 		if (%ready)
 		{
 			%text = "<just:center>\c6Use \c3/ready \c6to join the upcoming round. " @ %readyText @ "\n" @ %leftText;
-			serverPlay3D(TimerCountdownSound);
+			serverPlay2D(TimerCountdownSound);
 		}
 		else
 			%text = "<just:center>\c6Use \c3/ready \c6to start a new round!";
