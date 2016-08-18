@@ -80,7 +80,9 @@ function createBloodDripProjectile(%position, %size, %paint) {
 	};
 
 	MissionCleanup.add(%obj);
-	GameRoundCleanup.add(%obj);
+	%round = $DefaultMiniGame.spaceRound;
+	if(%round)
+		%round.garbageSet.add(%obj);
 
 	if (%size !$= "") {
 		%obj.setScale(%size SPC %size SPC %size);
@@ -329,6 +331,13 @@ function createBloodSplatterExplosion(%position, %velocity, %scale) {
 //
 //Datablocks below
 //
+
+datablock AudioDescription( audioSilent3d : audioClose3D )
+{
+	maxDistance = 15;
+	referenceDistange = 5;
+};
+
 
 datablock AudioProfile(BloodSpillSound) {
 	fileName = "Add-Ons/GameMode_Space_Test/sounds/physics/blood_Spill.wav";

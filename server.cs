@@ -1,3 +1,5 @@
+exec("./support/math-angles-vectors.cs");
+exec("./support/decals.cs");
 exec("./support/hit_region.cs");
 exec("./support/types.cs");
 exec("./support/json.cs");

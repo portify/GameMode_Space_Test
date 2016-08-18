@@ -157,6 +157,9 @@ function SpaceRound::onRemove(%this)
 	%this.itemSet.delete();
 	%this.garbageSet.delete();
 	%this.characterSet.delete();
+
+	if (isObject(DecalGroup))
+		DecalGroup.deleteAll();
 }
 
 function SpaceRound::pickJob(%this)
