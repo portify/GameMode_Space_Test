@@ -175,6 +175,9 @@ package SpaceDamage
 				%obj.emote(PainMidImage, 1);
 			else
 				%obj.emote(PainLowImage, 1);
+
+			createBloodSplatterExplosion(%position, vectorNormalize(vectorSub(%position, %source.getEyePoint())), "1 1 1");
+			%obj.doSplatterBlood(%randMax, %position, %vector, %type == $DamageType::Sharp ? 45 : 180);
 		}
 		else
 		{

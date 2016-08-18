@@ -3,6 +3,8 @@ $FOOTSTEPS_INTERVAL = 150;
 $FOOTSTEPS_MIN_LANDING = 2.5;
 $FOOTSTEPS_MIN_WALKING = 2.5;
 $FOOTSTEPS_MIN_IMPACT = 15;
+$FOOTSTEPS_BLOODYFOOTPRINTS = 1;
+$FOOTSTEPS_MAXBLOODSTEPS = 30;
 
 datablock AudioDescription(AudioPlayerFootstepLowProfile : AudioDefault3D)
 {
@@ -154,6 +156,11 @@ function Armor::onLand(%this, %obj, %force)
 		if (!%ray)
 			continue;
 
+		if (%obj.bloodyFootprints > 0)
+		{
+			%obj.doBloodyFootprint(%ray, %i, %obj.bloodyFootprints / %obj.bloodyFootprintsLast);
+		}
+
 		if (%force >= $FOOTSTEPS_MIN_IMPACT)
 			%material = "heavy";
 		else
@@ -172,6 +179,28 @@ function Armor::onFootstep(%this, %obj, %foot, %running)
 
 	if (!%ray)
 		return;
+
+	if($FOOTSTEPS_BLOODYFOOTPRINTS)
+	{
+		initContainerRadiusSearch(getWords(%ray, 1, 3), 0.4, $TypeMasks::ShapeBaseObjectType);
+		while (%col = containerSearchNext())
+		{
+			if (%col.isBlood && %col.freshness >= 1)// && %col.sourceClient != %obj.client)
+			{
+				%obj.setBloodyFootprints(getMin(%obj.bloodyFootprints + %col.freshness * 3, $FOOTSTEPS_MAXBLOODSTEPS), %col.sourceClient); //Default freshness for splatter blood is 3, so 15 footsteps for fresh step.
+				%col.freshness--; //Decrease blood freshness
+				createBloodExplosion(getWords(%ray, 1, 3), %obj.getVelocity(), %col.getScale());
+				serverPlay3d(bloodSpillSound, getWords(%ray, 1, 3));
+				break;
+			}
+		}
+		//if (!%obj.isCloaked && 0)
+		if (%obj.bloodyFootprints > 0)
+		{
+			%obj.doBloodyFootprint(%ray, %foot, %obj.bloodyFootprints / %obj.bloodyFootprintsLast);
+			%obj.bloodyFootprints--;
+		}
+	}
 
 	%material = %ray.getDataBlock().material;
 

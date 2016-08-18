@@ -10,6 +10,7 @@ exec("./scripts/round.cs");
 exec("./scripts/chat.cs");
 exec("./scripts/character.cs");
 exec("./scripts/player.cs");
+exec("./scripts/blood.cs");
 exec("./scripts/damage.cs");
 exec("./scripts/footsteps.cs");
 exec("./scripts/doors.cs");
