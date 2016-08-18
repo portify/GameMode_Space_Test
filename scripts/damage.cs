@@ -198,7 +198,10 @@ package SpaceDamage
 
 		%obj.playDeathCry();
 		%obj.playDeathAnimation();
+		%obj.setArmThread("land");
+		%obj.setActionThread("root");
 		%obj.setDamageFlash(0.75);
+		%obj.setShapeNameDistance(0);
 
 		if (isObject(SpaceRound))
 		{
